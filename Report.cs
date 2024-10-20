@@ -1,6 +1,6 @@
 ﻿namespace MyRepositoryProject
 {
-    
+
     public class Report
     {
         public List<Dealer> Dealers = [];
@@ -8,7 +8,7 @@
         {
 
         }
-        public Report (List<Dealer> deals) => Dealers = deals;
+        public Report(List<Dealer> deals) => Dealers = deals;
         private List<Dealer> GetMaxSaleCar()
         {
             int maxCount = Dealers.Max(n => n.Sale.Count);
@@ -39,5 +39,7 @@
             return result;
 
         }
+
+        public bool IsEmpty() => Dealers.Count == 0;
     }
 }

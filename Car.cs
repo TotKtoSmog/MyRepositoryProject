@@ -4,7 +4,7 @@
     {
         public string? CarName
         {
-            get => _carName; 
+            get => _carName;
             set => _carName = value;
         }
         private string? _carName;
@@ -24,5 +24,7 @@
             _carName = carName;
             _carPrice = carPrice;
         }
+
+        public bool IsEmpty() => CarName == "Empty" && CarPrice == 0;
     }
 }
