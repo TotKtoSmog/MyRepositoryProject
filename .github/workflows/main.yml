@@ -29,4 +29,4 @@ jobs:
       run: dotnet restore 
       
     - name: Build the project
-      run: dotnet build --configuration ${{ matrix.configuration }} --no-restore
+      run: dotnet build MyRepositoryProject/MyRepositoryProject.sln --configuration ${{ matrix.configuration }} --no-restore
