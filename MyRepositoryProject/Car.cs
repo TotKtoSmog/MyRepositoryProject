@@ -24,5 +24,7 @@
             _carName = carName;
             _carPrice = carPrice;
         }
+
+        public bool IsEmpty() => CarName == "Empty" && CarPrice == 0;
     }
 }

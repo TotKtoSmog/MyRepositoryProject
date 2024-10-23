@@ -38,5 +38,6 @@
             return result;
 
         }
+        public bool IsEmpty() => Dealers.Count == 0;
     }
 }

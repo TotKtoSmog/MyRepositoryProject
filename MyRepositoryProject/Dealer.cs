@@ -15,5 +15,11 @@
             DealerName = dealerName;
             Sale = sale;
         }
+
+        public bool IsEmpty() => DealerName == "Empty";
+
+        public double GetMaxPriceSale() => IsEmptySale() ? 0 : Sale.Max(n => n.CarPrice);
+
+        public bool IsEmptySale() => Sale.Count == 0;
     }
 }
