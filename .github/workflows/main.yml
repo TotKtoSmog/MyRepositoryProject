@@ -38,3 +38,44 @@ jobs:
       with:
         name: test-results-${{ matrix.configuration }}
         path: '**/TestResults/*.trx'
+        
+  create_pr:
+      needs: build
+      if: github.ref == 'refs/heads/development'
+      runs-on: windows-latest
+
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
+
+        - name: Create Pull Request
+          run: |
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            gh pr create --base master --head development --title "Merge development into master" --body "Automated PR from development to master"
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+  auto_merge:
+    needs: [build, create_pr]
+    if: github.ref == 'refs/heads/development'
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Auto Merge PR
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin master
+          git checkout master
+          git merge development || echo "Merge conflict detected, please resolve manually."
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
