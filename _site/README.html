@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>MyRepositoryProject | MyRepositoryProject </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="MyRepositoryProject | MyRepositoryProject ">
+    
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="MyRepositoryProject">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="docs/introduction.html" title="Docs">Docs</a>
+                      </li>
+                      <li>
+                          <a href="api/MyRepositoryProject.html" title="API">API</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="myrepositoryproject">MyRepositoryProject</h1>
+
+<h2 id="практическая-работа-2-cicd">Практическая работа №2. CI/CD</h2>
+<ol>
+<li>Настройте систему непрерывной интеграции (CI) для вашего проекта, например, используя сервисы GitHub Action, GitLab CI/CD, Jenkins, Travis, CI или другие инструменты. Пример «Настройка CI с помощью GitHub Actions»:
+<ul>
+<li>Откройте репозиторий проекта на GitHub. Перейдите во вкладку «Actions» в верхней части страницы репозитория. Нажмите на кнопку «Set up a workflow yourself» или выберите один из шаблонов для создания нового workflow.</li>
+<li>Создайте файл с названием main.yml в папке .github/workflows/ вашего репозитория и определите в нем шаги вашего CI/CD процесса.</li>
+<li>Сделайте коммит и отправьте изменения в ваш репозиторий на GitHub.</li>
+<li>Проверка работы CI: после отправки изменений в репозиторий, перейдите во вкладку «Actions» на GitHub. Отобразите в отчете список запущенных workflow и их статус. Проверьте лoг выполнения шагов вашего CI/CD процесса.</li>
+</ul>
+</li>
+<li>Настройте CI таким образом, чтобы он автоматически запускался при каждом новом коммите в ваш репозиторий.</li>
+<li>Добавьте скрипты для тестирования вашего проекта (например, unit-тесты, интеграционные тесты) и убедитесь, что они успешно проходят при запуске через CI.</li>
+<li>Создайте ветку Development для разработки новых функций и исправлений.</li>
+<li>Разработайте новую функцию или исправление ошибки в вашем проекте и закоммитьте изменения в ветку development.</li>
+<li>Убедитесь, что CI успешно запустился после коммита в ветку development и прошел все тесты.</li>
+<li>Создайте Pull Request (PR) для вливания изменений из ветки development в основную ветку (например, main).</li>
+<li>Настройте автоматическое тестирование и слияние PR при успешном прохождении всех тестов.</li>
+<li>Проверьте, что изменения из ветки development успешно влилось в основную ветку с помощью CI/CD.</li>
+<li>Создайте ветку release для подготовки к выпуску новой версии вашего проекта.</li>
+<li>Подготовьте все необходимые изменения (например, обновление версии, исправление багов) в ветке release.</li>
+<li>Убедитесь, что CI успешно запустился после коммита в ветку release и все тесты прошли успешно.</li>
+<li>Создайте новый тег для версии вашего проекта и опубликуйте его на платформе Git.</li>
+<li>Создайте документацию к вашему проекту и добавьте ее в репозиторий.</li>
+<li>Настройте автоматическую генерацию документации при каждом обновлении кода через CI/CD.</li>
+<li>Проверьте, что документация успешно обновляется при каждом изменении кода.</li>
+<li>Заключите текущую версию проекта и завершите работу на лабораторную работу.</li>
+</ol>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/TotKtoSmog/MyRepositoryProject/blob/release/README.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

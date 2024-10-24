@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: MyRepositoryProject
+  commentId: N:MyRepositoryProject
+  id: MyRepositoryProject
+  children:
+  - MyRepositoryProject.Car
+  - MyRepositoryProject.Dealer
+  - MyRepositoryProject.Report
+  langs:
+  - csharp
+  - vb
+  name: MyRepositoryProject
+  nameWithType: MyRepositoryProject
+  fullName: MyRepositoryProject
+  type: Namespace
+  assemblies:
+  - MyRepositoryProject
+references:
+- uid: MyRepositoryProject.Car
+  commentId: T:MyRepositoryProject.Car
+  href: MyRepositoryProject.Car.html
+  name: Car
+  nameWithType: Car
+  fullName: MyRepositoryProject.Car
+- uid: MyRepositoryProject.Dealer
+  commentId: T:MyRepositoryProject.Dealer
+  href: MyRepositoryProject.Dealer.html
+  name: Dealer
+  nameWithType: Dealer
+  fullName: MyRepositoryProject.Dealer
+- uid: MyRepositoryProject.Report
+  commentId: T:MyRepositoryProject.Report
+  href: MyRepositoryProject.Report.html
+  name: Report
+  nameWithType: Report
+  fullName: MyRepositoryProject.Report

@@ -1,0 +1,12 @@
+### YamlMime:TableOfContent
+items:
+- uid: MyRepositoryProject
+  name: MyRepositoryProject
+  items:
+  - uid: MyRepositoryProject.Car
+    name: Car
+  - uid: MyRepositoryProject.Dealer
+    name: Dealer
+  - uid: MyRepositoryProject.Report
+    name: Report
+memberLayout: SamePage
